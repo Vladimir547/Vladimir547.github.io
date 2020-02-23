@@ -97,6 +97,15 @@ h2{
 .menu a + a{
     margin-left: 24px;
 }
+.menu a + a::before{
+    content: '';
+    position: absolute;
+    left: -15px;
+    top: 6px;
+    width: 2px;
+    height: 2px;
+    background: #494e62;
+}
 .menu a:hover{
     color: #e36861;
 }
