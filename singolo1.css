@@ -261,3 +261,40 @@ h2{
     color: #666d89;
     line-height: 1.7;
 }
+.gallery{
+    background: #2d303a;
+    padding: 70px 0px 67px 0px;
+    position: relative;
+}
+.gallery::after{
+    content: '';
+    position: absolute;
+    height: 6px;
+    width:100%;
+    background: #323746;
+    bottom: -6px;
+}
+.gallery-menu{
+    padding: 14px 0px 21px 2px;
+}
+.gallery-menu a{
+    font-size: 12px;
+    font-family: 'latolight';
+    padding: 3px 7px;
+    border: 1px solid #666d89;
+    border-radius: 6px;
+    color: #767e9e;
+}
+.gallery-menu a + a{
+    margin-left:6px;
+}
+.gallery-wrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-row-gap: 20px;
+    padding-left: 1px;
+    grid-column-gap: 20px;
+}
+.gallery-item{
+    display: flex;
+}
