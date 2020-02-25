@@ -158,8 +158,74 @@
                     <div class="gallery-item">
                         <img src="assets/img/project12.png" alt="picture">
                     </div>
+                    <div class="gallery-item">
+                        <img src="assets/img/project12.png" alt="picture">
+                    </div>
                 </div>
             </div>
         </section>
+        <section class = 'about'>
+            <div class="container">
+                <div class="advantages-headline">
+                    <h2>About Us</h2>
+                    <p>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
+                </div>
+                <div class="about-wrapper">
+                    <div class="about-item">
+                        <div class="about-img">
+                            <img src="assets/img/photo1.png" alt="photo">
+                        </div>
+                        <div class="abot-text">
+                            <h4>Adam Jensen</h4>
+                            <p>Quisque luctus, quam eget molestie commodo, lacus purus cursus purus, nec rutrum tellus dolor id lorem.</p>
+                        </div>
+                        <div class="about-social">
+                            <a href="#"><i class= 'icon-facebook'></i></a>
+                            <a href="#"><i class= 'icon-google'></i></a>
+                            <a href="#"><i class= 'icon-twitter'></i></a>
+                            <a href="#"><i class= 'icon-linkedin2'></i></a>
+                        </div>
+                    </div>
+                    <div class="about-item">
+                        <div class="about-img">
+                            <img src="assets/img/photo2.png" alt="photo">
+                        </div>
+                        <div class="abot-text">
+                            <h4>Desmond Miles</h4>
+                            <p>Curabitur vestibulum eget mauris quis laoreet. Phasellus in quam laoreet, viverra lacus ut, ultrices velit.</p>
+                        </div>
+                        <div class="about-social">
+                            <a href="#"><i class= 'icon-facebook'></i></a>
+                            <a href="#"><i class= 'icon-google'></i></a>
+                            <a href="#"><i class= 'icon-twitter'></i></a>
+                            <a href="#"><i class= 'icon-linkedin2'></i></a>
+                        </div>
+                    </div>
+                    <div class="about-item">
+                        <div class="about-img">
+                            <img src="assets/img/photo3.png" alt="photo">
+                        </div>
+                        <div class="abot-text">
+                            <h4>Scolara Visari</h4>
+                            <p>Nulla sed nunc et tortor luctus faucibus. Morbi at aliquet turpis, et consequat felis. Quisque condimentum.</p>
+                        </div>
+                        <div class="about-social">
+                            <a href="#"><i class= 'icon-facebook'></i></a>
+                            <a href="#"><i class= 'icon-google'></i></a>
+                            <a href="#"><i class= 'icon-twitter'></i></a>
+                            <a href="#"><i class= 'icon-linkedin2'></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <script>
+            let galleryItem = document.querySelector('.gallery-wrapper');
+            for( let i = 0; i < galleryItem.children.length; i++){
+                if(i >= 12){
+                    galleryItem.children[i].style.display = 'none';
+                }
+            }
+        </script>
     </body>
 </html>
