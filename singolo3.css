@@ -1,0 +1,215 @@
+@font-face {
+    font-family: 'latoblack';
+    src: url('assets/fonts/lato-black-webfont.woff2') format('woff2'),
+         url('assets/fonts/lato-black-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'latobold';
+    src: url('assets/fonts/lato-bold-webfont.woff2') format('woff2'),
+         url('assets/fonts/lato-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'latolight';
+    src: url('assets/fonts/lato-light-webfont.woff2') format('woff2'),
+         url('assets/fonts/lato-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'latoregular';
+    src: url('assets/fonts/lato-regular-webfont.woff2') format('woff2'),
+         url('assets/fonts/lato-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+}
+h1, h2, h3, h4, h5, h6, p, ul, li, a{
+    padding: 0px;
+    margin: 0px;
+} 
+a{
+    text-decoration: none;
+}
+.container{
+    width: 960px;
+    margin: auto;
+    padding: 0px 10px;
+}
+h1{
+    text-transform: uppercase;
+    font-family: 'latoregular';
+    font-size: 25px;
+    line-height: 1;
+}
+h2{
+    text-transform: capitalize;
+    font-family: 'latoblack';
+    font-size: 30px;
+    line-height: 1;
+    color: #666d89;
+}
+.form-contact{
+    background: #f06c64;
+    padding: 62px 0px 67px 0px;
+    position: relative;
+}
+.form-contact::after{
+    content: '';
+    position: absolute;
+    height: 6px;
+    width:100%;
+    background: #ea676b;
+    bottom: -6px;
+}
+.contact-headline h2{
+    margin-left: 3px;
+    color: #f0d8d9;
+    text-transform: none;
+}
+.contact-headline p{
+    font-family: 'latolight';
+    font-size: 18px;
+    color: #f0d8d9;
+    margin-left: 2px;
+    margin-top: 21px;
+    line-height: 1.7;
+    letter-spacing: 0px;
+}
+.contact-wrapper{
+    display: flex;
+}
+.form-item {
+    margin-top: 28px;
+    margin-left: 3px;
+}
+.form-item form{
+    display: flex;
+    flex-direction: column;
+}
+.form-item form input,textarea{
+    width: 619px;
+    margin-top: 16px;
+    background: #d6564f;
+    border: none;
+    font-size: 12px;
+    font-family: 'latoregular';
+    color: #f48c8f;
+    padding-left: 15px;    
+    border-radius: 4px
+}
+.form-item form input{
+    height: 38px;
+}
+.form-item form textarea{
+    padding-top: 10px;
+    resize: none;
+    height: 202px;
+}
+.form-item form input::-webkit-input-placeholder{
+    color: #f48c8f;
+}
+.form-item form textarea::-webkit-input-placeholder{
+    color: #f48c8f;
+}
+.form-item form input::-moz-placeholder{
+    color: #f48c8f;
+}
+.form-item form textarea:-moz-placeholder{
+    color: #f48c8f;
+}
+.form-item form input:focus{
+    outline: none;
+}
+.form-item form textarea:focus{
+    outline: none;
+}
+.contact-box{
+    margin-top: 47px;
+    margin-left: 21px;
+}
+.contact-box h4{
+    font-family: 'latoblack';
+    font-size: 18px;
+    line-height: .7;
+    color: #f0d8d9;
+}
+.contact-box p{
+    color: #f0d8d9;
+    font-family: 'latoregular';
+    font-size: 12px;
+    margin-top: 14px;
+    line-height: 1.8;
+}
+.adress-box{
+    margin-top: 23px;
+}
+.adress-box p{
+    margin-left: 3px;
+}
+.adress-box span{
+    padding-left: 10px;
+}
+.adress-box a{
+    color: #f0d8d9;
+    font-family: 'latoregular';
+    font-size: 12px;
+}
+.adress-box .adress:last-child{
+    margin-top: 5px;
+}
+.adress-box p:hover{
+    color: blue;
+} 
+.adress-box a:hover{
+    color: blue;
+} 
+.footer{
+    background: #2d303a;
+    margin-top: 6px;
+}
+.footer-wrapper{
+    display: flex;
+    justify-content: space-between;
+    height: 76px;
+    align-items: center;
+}
+.copyright{
+    color: #4b5164;
+    font-family: 'latoregular';
+    font-size: 12px;
+    margin-left: 3px;
+}
+.footer-social{
+    display: flex;
+    margin-right: -2px;
+}
+.footer-social a{
+    color: #666d89;
+    border: 1px solid #666d89;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 32px;
+    height: 32px;
+    font-size: 16px;
+    transition: ease .3s;
+}
+.footer-social a + a{
+    margin-left: 7px;
+}
+.footer-social a:hover{
+    color: #ffffff;
+    background: aqua;
+    border: 1px solid aqua; 
+}
