@@ -60,7 +60,12 @@ h2{
 }
 .header{
     background: #2d303a;
-    position: relative;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    z-index: 2000;
 }
 .header::after{
     content: '';
@@ -114,6 +119,7 @@ h2{
     height: 594px;
     background: #f06c64;
     position: relative;
+    margin-top: 100px;
 }
 .slider::after{
     content: '';
@@ -172,10 +178,20 @@ h2{
     top: 0px;
     left: 0px;
 }
-.vertical-phone img:last-child{
+.vertical-phone img:nth-child(3){
     position: absolute;
     top: 62px;
     left: 11px;
+    z-index: 10;
+}
+.vertical-phone .display{
+    position: absolute;
+    top: 62px;
+    left: 11px;
+    background: black;
+    width: 194px;
+    height: 339px;
+    z-index: 9;
 }
 .gorizontal-phone img:first-child{
     width: 483px;
@@ -186,11 +202,23 @@ h2{
     top: 0px;
     right: 26px;
 }
-.gorizontal-phone img:last-child{
+
+.gorizontal-phone img:nth-child(3){
     position: absolute;
     top: 11px;
     right: 88px;
+    z-index: 10;
 }
+.gorizontal-phone .display{
+    position: absolute;
+    top: 11px;
+    right: 88px;
+    background: black;
+    width: 339px;
+    height: 194px;
+    z-index: 9;
+}
+
 .advantages{
     background: #f2f2f2;
     margin-top: 6px;
@@ -551,4 +579,10 @@ h2{
     color: #ffffff;
     background: aqua;
     border: 1px solid aqua; 
+}
+.menu .menuActive{
+    color: #e36861;
+}
+.hide{
+    opacity: 0;
 }
