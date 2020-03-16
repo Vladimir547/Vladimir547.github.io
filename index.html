@@ -118,7 +118,7 @@
                     <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>
                 </div>
                 <div class="gallery-menu">
-                    <a href="#">All</a>
+                    <a href="#" class = 'active-gallery'>All</a>
                     <a href="#">Web Design</a>
                     <a href="#">Graphic Design</a>
                     <a href="#">Artwork</a>
@@ -240,6 +240,7 @@
                             <input type="email"  name = 'email' placeholder = 'Email (Required)' required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$">
                             <input type="text" name = 'subject' placeholder = 'Subject'>
                             <textarea name="describe" id="" cols="30" rows="12" placeholder = 'Describe your project in detail...'></textarea>
+                            <input type="submit" value = 'submit' name = 'send'>;
                         </form>
                     </div>
                     <div class = "contact-box">
@@ -256,6 +257,14 @@
                             <div class="adress">
                                 <a href="mailto:info@singolo.com"><img src="assets/img/mail.png" alt="mail"> <span>info@singolo.com</span></a>
                             </div>
+                        </div>
+                    </div>
+                    <div class="msg-wrap msg-hidden">
+                        <div id="msg">
+                            <h4>Письмо отправлено</h4>
+                            <div class="theme"></div>
+                            <div class="discript"></div>
+                            <button class="btn-sub ">Ok</button>
                         </div>
                     </div>
                 </div>

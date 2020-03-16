@@ -110,6 +110,7 @@ h2{
 .form-item form input{
     height: 38px;
 }
+
 .form-item form textarea{
     padding-top: 10px;
     resize: none;
@@ -129,9 +130,11 @@ h2{
 }
 .form-item form input:focus{
     outline: none;
+    background: blanchedalmond;
 }
 .form-item form textarea:focus{
     outline: none;
+
 }
 .contact-box{
     margin-top: 47px;
@@ -212,4 +215,7 @@ h2{
     color: #ffffff;
     background: aqua;
     border: 1px solid aqua; 
+}
+.msg-bg{
+    position: absolute;
 }

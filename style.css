@@ -340,7 +340,7 @@ h2{
     cursor: pointer;
 }
 .gallery-item img:hover{
-    transform: scale(1.1);
+    cursor: pointer;
 }
 .about{
     padding: 62px 0px 65px 0px;
@@ -496,9 +496,11 @@ h2{
 }
 .form-item form input:focus{
     outline: none;
+    background: blanchedalmond;
 }
 .form-item form textarea:focus{
     outline: none;
+    background: blanchedalmond;
 }
 .contact-box{
     margin-top: 47px;
@@ -585,4 +587,26 @@ h2{
 }
 .hide{
     opacity: 0;
+}
+.gallery-menu .active-gallery{
+    color: #ffffff;
+}
+.gallery-item .active-img{
+    border: 5px solid #F06C64;
+}
+.msg-wrap{
+    position: absolute;
+    display: flex;
+    left: 50%;
+    top: 60%;
+    height: 200px;
+    width:300px;
+    background: blanchedalmond;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    transform: translate(-50%);
+}
+.msg-hidden{
+    display: none;
 }
