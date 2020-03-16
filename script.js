@@ -57,25 +57,30 @@ function shakeImg(e) {
     for (let item of arrPartfolio) {
         shakePartfolioPhoto.insertAdjacentElement('beforeend',item);
     }
-
+    
     images.replaceWith(shakePartfolioPhoto);
     //console.log(arrPartfolio);
 }
 //border for images
 let blockImages = document.querySelector('.gallery-wrapper');
 let arrImages = document.querySelectorAll('.gallery-item img');
-//console.log(arrImages);
-blockImages.addEventListener('click', borderForImages);
+for(let one of arrImages){
+    one.addEventListener('click', borderForImages);
+}
 function borderForImages(e){
-    let target = e.target.closest('.gallery-item img');
+    let target = e.target.closest('img');
     if(!target) return;
     if(!target.closest('.active-img')){
-        for(let item of arrImages){
+        /*for(let item of arrImages){
             item.classList.remove('active-img');
-        }
+        }*/
+        arrImages.forEach(item => {
+            item.classList.remove('active-img');
+        });
         target.className = 'active-img';
     }
     //console.log(target);
+    console.log(blockImages);
 }
 //form submit
 let btnOk = document.querySelector('.btn-sub ');
