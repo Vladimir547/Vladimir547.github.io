@@ -502,6 +502,12 @@ h2{
     outline: none;
     background: blanchedalmond;
 }
+.form-item form .submit{
+    width: 31%;
+    background: lightsalmon;
+    color: black;
+    text-transform: uppercase;
+}
 .contact-box{
     margin-top: 47px;
     margin-left: 21px;
@@ -617,4 +623,191 @@ h2{
     border-radius: 20px;
     display: flex;
     flex-direction: column;
+}
+@media screen and (max-width: 1019px) {
+    h1 {
+        font-size: 24px;
+    }
+    .container{
+        width: 100%;
+    }
+    .header {
+        height: 95px;
+    }
+    .header-wrapper {
+        padding: 0px 30px;
+    }
+    .menu{
+        height: 94px;
+        display: flex;
+        align-items: center;
+    }
+    .menu a + a {
+        margin-left: 30px;
+    }
+    .slider{
+        margin-top: 95px;
+        height: 445px;
+    }
+    .slider-wrapper {
+        max-width: 768px;
+    }
+    .vertical-phone {
+        top: 41px;
+    }
+    .vertical-phone img:nth-child(2) {
+        width: 162px;
+        height: 344px;
+    }
+    .vertical-phone img:nth-child(3) {
+        top: 46px;
+        left: 9px;
+        width: 145px;
+        height: 255px;
+    }
+    .vertical-phone img:first-child {
+        width: 181px;
+        height: 364px;
+        left: 9px;
+    }
+    .vertical-phone .display {
+        top: 46px;
+        left: 9px;
+        width: 145px;
+        height: 255px;
+    }
+    .gorizontal-phone {
+        top: 133px;
+        right: 62px;
+    }
+    .gorizontal-phone img:first-child {
+        position: absolute;
+        width: 363px;
+        height: 181px;
+        right: 23px;
+    }
+    .gorizontal-phone img:nth-child(2) {
+        width: 344px;
+        height: 162px;
+        right: 42px;
+    }
+    .gorizontal-phone img:nth-child(3) {
+        width: 255px;
+        height: 145px; 
+        top: 9px;
+    }
+    .gorizontal-phone .display {
+        width: 255px;
+        height: 145px; 
+        top: 9px;
+    }
+    .right-arrow, .left-arrow {
+        transform: translate(3px, 0px);
+    }
+    .left-arrow {
+        margin-left: 14px;
+    }
+    .right-arrow{
+        margin-right: 19px;
+    }
+    .advantages-wrapper {
+        grid-template-columns: 1fr 1fr;
+        margin-top: 38px;
+        padding: 0px 30px;
+    }
+    .advantages {
+        padding: 43px 0px 71px  0px;
+    }
+    .advantages-headline{
+        padding: 0px 28px;
+    }
+    .advantages-headline p {
+        text-align: justify;
+    }
+    .advantages-item:nth-child(n+3) {
+        margin-top: 22px;
+    }
+    .gallery {
+        background: #2d303a;
+        padding: 63px 0px 62px 0px;
+    }
+    .gallery-menu {
+        padding: 13px 30px 21px 30px;
+    }
+    .gallery-wrapper {
+        grid-template-columns: 1fr 1fr 1fr;
+        padding: 0px 29px;
+        margin-top: 10px;
+    }
+    .gallery-item img {
+        width: 100%;
+        height: 100%;
+    }
+    .about {
+        padding: 57px 0px 67px 0px;
+    }
+    .about-wrapper {
+        margin-top: 37px;
+        margin-left: 0px;
+        padding: 0px 32px;
+    }
+    .about-item{
+        min-width: 219px;
+        width: 30%;
+    }
+    .about-img img {
+        width: 100%;
+        height: 100%;
+    }
+    .abot-text{
+        width: auto;
+    }
+    .abot-text h4 {
+        margin-top: -4px;
+    }
+    .abot-text p {
+        margin-top: 7px;
+    }
+    .about-social {
+        margin-top: 18px;
+    }
+    .form-contact {
+        padding: 57px 0px 43px 0px
+    }
+    .contact-headline{
+        padding: 0px 30px;
+    }
+    .contact-wrapper {
+        padding: 0px 27px;
+        justify-content: space-between;
+    }
+    .form-item {
+        margin-top: 11px;
+        /*width: 100%;
+        min-width: 440px;*/
+    }
+    .form-item form input, textarea {
+        margin-top: 13px;
+        padding-left: 9px;
+        width: auto;
+        width: 57vw;
+    }
+    .form-item form textarea {
+        height: 158px;
+        padding-top: 6px;
+    }
+    .contact-box {
+        margin-top: 28px;
+        margin-left: 31px;
+    }
+    .contact-box p {
+        margin-top: 7px;
+        line-height: 1.9;
+    }
+    .adress-box {
+        margin-top: 9px;
+    }
+    .footer-wrapper {
+        padding: 0px 35px;
+    }
 }
