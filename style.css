@@ -92,6 +92,7 @@ h2{
 .menu{
     margin-right: -1px;
     display: flex;
+    z-index: 202;
 }
 .menu a{
     color: #ffffff;
@@ -681,7 +682,7 @@ h2{
     left: 0px;
     height: 100vh;
     width: 100%;
-    z-index: 201;
+    z-index: 199;
 }
 @media screen and (max-width: 1019px) {
     h1 {
