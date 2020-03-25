@@ -5,7 +5,8 @@ window.onload = function(){
     burger.addEventListener('click', () =>{
         if(burger.closest('.close-menu')){
             hideM();
-        } else {
+        }
+         else {
             showM();
         }
     });
@@ -28,4 +29,9 @@ window.onload = function(){
         burger.classList.remove('close-menu');
     }
     overflowMenu.addEventListener('click', hideM);
+        window.addEventListener("resize", function() {
+            if (window.screen.width > 768){
+                hideM();
+            }
+        });
 }
