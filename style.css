@@ -1088,7 +1088,6 @@ h2{
         width: calc(22vw + 5px);
          min-height: auto; 
     }
-        height: 29vw;
     .gallery-menu{
         display: flex;
         flex-wrap: wrap;
