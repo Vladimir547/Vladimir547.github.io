@@ -901,6 +901,9 @@ h2{
         width: 277px;
         z-index: 202;
     }
+    .show-menu{
+        display: flex;
+    }
     .header-wrapper .menu a {
         margin-bottom: 31px;
         margin-left: 71px;

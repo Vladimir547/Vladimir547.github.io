@@ -15,7 +15,7 @@ window.onload = function(){
         if(event.code =='Escape') hideM();
     }
     function showM(e){
-        menu.style.display= 'flex';
+        menu.classList.add('show-menu');
         burger.classList.add('close-menu');
         logo.classList.add('logo-open');
         overflowMenu.className= "overflow";
@@ -23,7 +23,7 @@ window.onload = function(){
     }
     function hideM(e){
         overflowMenu.remove();
-        menu.style.display= 'none';
+        menu.classList.remove('show-menu');
         logo.classList.remove('logo-open');
         burger.classList.remove('close-menu');
     }
