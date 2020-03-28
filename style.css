@@ -30,6 +30,9 @@
 *{
     box-sizing: border-box;
 }
+html{
+    scroll-behavior: smooth;
+}
 body{
     margin: 0;
 }
@@ -1082,7 +1085,8 @@ h2{
 }
 @media screen and (max-width: 374px) {
     .slider {
-        min-height: auto;
+        min-height: 178px;
+        height: auto;
     }
     .vertical-phone img:nth-child(2) {
         width: calc(21vw + 1px);
